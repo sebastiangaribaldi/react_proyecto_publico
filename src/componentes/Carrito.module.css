@@ -1,33 +1,56 @@
-.carrito{
+.carritoContainer {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.carritoItem {
     display: flex;
-    width: 100%;
-    height: auto;
-    align-content: start;
-    align-items: top ;
-    background-color: lightgoldenrodyellow;
-    justify-content: space-evenly;
-    padding: 10px;
-    border: 0%;
-    margin: 0%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
-.prod{
-margin: 1%;
-align-items: stretch;
-border: #3b4545 3px solid;
-text-align: start;
-border-radius: 5px;
-padding: 10px;
-margin: 5px;
-flex-basis: 20%;
+.itemImagen {
+    width: 80px;
+    height: 80px;
+    object-fit: contain; /* Ensures the image fits without being distorted */
+    margin-right: 20px;
 }
 
-.tabla{
-    table-layout: auto; width: 100%;
-    vertical-align: top;
-    text-align: start;
+.itemDetalles {
+    flex-grow: 1; /* Allows this element to take up the available space */
+    text-align: left;
 }
 
-.td{
-    vertical-align: top;
+.itemDetalles h4 {
+    margin: 0 0 5px 0;
+    font-size: 16px;
+}
+
+.itemDetalles h5 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.botonEliminar {
+    background-color: #dc3545; /* A nice red for delete */
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+}
+
+.botonEliminar:hover {
+    background-color: #c82333;
 }
