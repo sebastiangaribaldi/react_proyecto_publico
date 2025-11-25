@@ -1,0 +1,47 @@
+.contenedor {
+    display: grid;
+}
+
+.itm_producto {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr 1fr;
+    background-color: #f9f9f9; /* Un color de fondo claro */
+    padding: 3px;
+    border-radius: 8px;
+    width: 80%; /* Ancho del formulario */
+    margin: 3px auto; /* Centrado en la página */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    align-items: center;
+  } 
+
+.nombre {
+    padding: 2px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.descripcion{
+    padding: 2px;
+    text-align: left;
+}
+
+.precio {
+    padding: 2px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.btnAgregar {
+    width: 100%;
+    padding: 12px 20px;
+    background-color: #007bff; /* Un color de botón azul */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .btnAgregar:hover {
+    background-color: #0056b3; /* Color más oscuro al pasar el ratón */
+  }

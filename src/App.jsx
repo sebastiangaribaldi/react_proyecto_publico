@@ -1,45 +1,56 @@
+
 import { useState } from 'react'
 import './App.css'
 import { Routes, Route } from 'react-router-dom';
 
-import Header from './componentes/Header.jsx'
-import Nav from './componentes/Nav.jsx'
+import Inicio from './pages/Inicio';
+import Moda from './pages/Moda';
+import ProductoDetalle from './pages/ProductoDetalle';
+import Contacto from './pages/Contacto.jsx';
 
-import Inicio from './componentes/Inicio.jsx';
-import Joyas from './componentes/Joyas.jsx';
-import ProductoDetalle from './componentes/ProductoDetalle';
-import Carrito from './componentes/Carrito.jsx';
+import Header from './components/Header.jsx'
+import Footer from './components/Footer.jsx'
 
-import Footer from './componentes/Footer.jsx'
+import Login from './pages/Login.jsx'
+import Admin from './pages/Admin.jsx'
+import RutaProtegida from './components/RutaProtegida.jsx'
+import Carrito from './components/Carrito.jsx' 
+import Catalogo from './pages/Catalogo.jsx';
 
 function App() {
-  const [carrito, setCarrito] = useState([]);
-  const agregarAlCarrito = (producto) => {
-    setCarrito([...carrito, producto]);
-  };
-  /*filtramos el producto que queremos eliminar del carrito*/
-  const eliminarDelCarrito = (indiceAEliminar) => {
-    setCarrito(carrito.filter((_, indice) => indice !== indiceAEliminar));
-  };
+  const [isAuthenticated, setisAuthenticated] = useState(true);
+
+  const cerrarSesion = () => setisAuthenticated(false);
+  const iniciarSesion = () => setisAuthenticated(true);
+
+ // const [count, setCount] = useState(0)
 
   return (
     <>
       <Header />
-      <Nav />
-      
+
       <Routes>
-        <Route path='/' element={<Inicio agregarProducto={agregarAlCarrito} />}/> 
-        <Route path='/joyas' element={<Joyas agregarProducto={agregarAlCarrito} />}/> 
+        <Route path='/' element={<Inicio/>}/> 
+        <Route path='/catalogo' element={<Catalogo/>}/> 
+        <Route path='/moda' element={<Moda/>}/> 
         <Route path='/productos/:id' element={<ProductoDetalle/>}/>
+        <Route path='/contacto' element={<Contacto/>}/> 
+        <Route path={'/login'} element={<Login/>} />
+        <Route path="/carrito" element={
+            <RutaProtegida >
+              <Carrito />
+            </RutaProtegida>
+          }
+        />
+        <Route path={'/admin'} element={
+          <RutaProtegida isAuthenticated={isAuthenticated}>
+              <Admin/>
+            </RutaProtegida>} 
+        />
       </Routes>
-      <hr/>
-      <Carrito 
-        productosEnCarrito={carrito}
-        productosEliminados={eliminarDelCarrito}
-      />
       <Footer />
     </>
   )
 }
 
-export default App
+export default App;

@@ -1,6 +1,5 @@
-/* Nueva Regla para separar la navegación del encabezado fijo */
 nav {
-  margin-top: 40px; /* AJUSTA este valor a la altura exacta de tu Header. */
+  background-color: #F5B027;
 }
 
 .lista {

@@ -1,0 +1,89 @@
+.container {
+  display: grid;
+}
+
+.imagen {
+  height: 100px;
+  width: 100px;
+}
+
+.panel {
+  flex: 1;
+  justify-content: center;
+}
+
+.cabecera {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  column-gap: 20%;
+}
+
+
+.contenedor {
+  display: grid;
+}
+
+.itm_producto {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr 1fr;
+  background-color: #f9f9f9; /* Un color de fondo claro */
+  padding: 3px;
+  border-radius: 8px;
+  width: 80%; /* Ancho del formulario */
+  margin: 3px auto; /* Centrado en la página */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  align-items: center;
+} 
+
+.nombre {
+  padding: 2px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.descripcion{
+  padding: 2px;
+  text-align: left;
+}
+
+.precio {
+  padding: 2px;
+  font-weight: bold;
+  text-align: left;
+}
+
+
+.boton {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-weight: 600;
+  align-items: stretch;
+  align-self: center;
+}
+
+.botonAgregar {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-weight: 600;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+
+.productoItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid gray;
+  cursor: pointer;
+  background-color: white;
+  text-align: center;
+}
