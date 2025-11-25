@@ -1,4 +1,4 @@
-import ProductosModa from "../components/ProductosModa";
+import ProductosModa from "../components/oldProductosModa";
 
 const Moda = () => {
     return(

@@ -1,8 +1,8 @@
 import { useState } from "react";
-import Style from './Formulario.module.css';
+import Style from './FormularioContacto.module.css';
 
 
-const Formulario = () => {
+const FormularioContacto = () => {
     
     const [nombre, setNombre] = useState('');
     const [apellido, setApellido] = useState('');
@@ -15,7 +15,7 @@ const Formulario = () => {
 
     return (
         <div className={Style.formulario}>
-            <h3>Déjanos tus datos para recibir nuestro Newsletter semanal</h3>
+            <h3>Ingresa tus datos para recibir nuestras noticias</h3>
             <form onSubmit={manejarEnvio}>
                 <label className={Style.etiqueta} htmlFor="nombre">Nombre</label>
                 <input className={Style.campos}
@@ -45,4 +45,4 @@ const Formulario = () => {
         </div>
     );
 }
-export default Formulario;
+export default FormularioContacto;

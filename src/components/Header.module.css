@@ -4,8 +4,12 @@
   display: flex;
   justify-content: space-between; 
   align-items: center; 
-  padding: 10px 40px;
+  padding: 10px 60px;
   border-bottom: 1px solid #eee;
+  /*width: 100%;*/
+  background:bisque;
+  top:0;
+  position:sticky;
 }
 
 .logo {
@@ -17,6 +21,7 @@
 
 .navbarContainer {
   flex-basis: 60%; 
+  
   text-align: center;
 }
 

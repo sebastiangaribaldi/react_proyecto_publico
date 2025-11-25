@@ -27,7 +27,3 @@ const ProductoDetalle = () => {
  
 export default ProductoDetalle;
 
-/*      <br />
-      <Link to='/' >Volver a Inicio</Link>
-
-*/

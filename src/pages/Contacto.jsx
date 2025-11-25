@@ -1,9 +1,10 @@
-import Formulario from "../components/Formulario";
+import FormularioContacto from "../components/FormularioContacto";
+
 
 const Contacto = () => {
     return (
         <>
-            <Formulario />
+            <FormularioContacto />
         </>
     );
 }

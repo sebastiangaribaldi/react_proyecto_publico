@@ -1,6 +1,6 @@
 import Productos from '../components/Productos';
 
-const Catalogo = () => {
+const ProductosLista = () => {
   return(
     <>
       <Productos />
@@ -8,4 +8,4 @@ const Catalogo = () => {
   );
 }
 
-export default Catalogo;
+export default ProductosLista;

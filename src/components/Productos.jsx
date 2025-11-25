@@ -48,18 +48,3 @@ const Productos = () => {
 
 export default Productos;
 
-/*
-    <div>
-      <h2>Productos</h2>
-      <ul>
-        {productos.map((producto) => (
-          <li key={producto.id}>
-            {producto.nombre} : {producto.precio}$
-            <img src={producto.imagen} height={80} width={80}/>
-            <button onClick={() => agregarAlCarrito(producto)}>Agregar</button>
-            <Link to={`/productos/${producto.id}` } onClick={() => setSelectedProductId(producto.id)}>Detalles</Link>
-          </li>
-        ))}
-      </ul>
-    </div>
-*/

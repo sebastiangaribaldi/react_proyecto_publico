@@ -16,7 +16,7 @@ const  Header = () => {
     <header className={styles.header}>
       {/* Seccion Izquierda: Logo */}
       <div className={styles.logo}>
-        Tiendita Nueva
+        Tiendita
       </div>
       {/* Seccion Central: Componente NavBar */}
       <div className={styles.navbarContainer}>
@@ -28,7 +28,7 @@ const  Header = () => {
           <button onClick={logout} className={styles.login}>Cerrar Sesion </button> 
           :
           <Link to="/login">
-            <button className={styles.login}>Ingresá</button>
+            <button className={styles.login}>Login</button>
           </Link>
         }
         <div className={styles.iconoDeCarrito}>

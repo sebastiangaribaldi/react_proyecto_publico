@@ -36,9 +36,9 @@ const GestionProductos = () => {
 
   return (
       <div className={styles.container}>
-        <h1>Gestión de Productos</h1>
+        <h1>Administración de Productos</h1>
         <div className={styles.cabecera}>
-          <h2>Lista de Productos</h2>
+          <h2>Productos</h2>
           {/* Botón para agregar producto */}
           <button
             onClick={abrirFormularioAgregar}

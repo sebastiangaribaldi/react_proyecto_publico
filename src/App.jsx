@@ -15,7 +15,7 @@ import Login from './pages/Login.jsx'
 import Admin from './pages/Admin.jsx'
 import RutaProtegida from './components/RutaProtegida.jsx'
 import Carrito from './components/Carrito.jsx' 
-import Catalogo from './pages/Catalogo.jsx';
+import ProductosLista from './pages/Productos.jsx';
 
 function App() {
   const [isAuthenticated, setisAuthenticated] = useState(true);
@@ -31,9 +31,9 @@ function App() {
 
       <Routes>
         <Route path='/' element={<Inicio/>}/> 
-        <Route path='/catalogo' element={<Catalogo/>}/> 
+        <Route path='/productos' element={<ProductosLista/>}/> 
         <Route path='/moda' element={<Moda/>}/> 
-        <Route path='/productos/:id' element={<ProductoDetalle/>}/>
+        <Route path='/productosDetalle/:id' element={<ProductoDetalle/>}/>
         <Route path='/contacto' element={<Contacto/>}/> 
         <Route path={'/login'} element={<Login/>} />
         <Route path="/carrito" element={

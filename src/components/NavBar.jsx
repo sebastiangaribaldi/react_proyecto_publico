@@ -11,11 +11,13 @@ const NavBar = () => {
         <ul className={styles.lista}>
           <li className={styles.item}>
             <Link to="/" className={styles.link}>Inicio</Link>
-            <Link to="/catalogo" className={styles.link}>Productos</Link>
+            <Link to="/productos" className={styles.link}>Productos</Link>
             <Link to="/contacto" className={styles.link}>Contacto</Link>
             {esAdmin && 
               <Link to="/Admin" className={styles.link}>Admin</Link>
             }
+
+
           </li>
         </ul>
       </nav>
