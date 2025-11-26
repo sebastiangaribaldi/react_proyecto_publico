@@ -2,7 +2,9 @@
   "name": "preentregafa",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://sebastiangaribaldi.github.io/react_proyecto_publico",
   "type": "module",
+  
   "scripts": {
     "dev": "vite",
     "build": "vite build",
