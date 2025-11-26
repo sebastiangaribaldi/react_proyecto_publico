@@ -1,10 +1,10 @@
 import { useContext } from 'react';
-import Navbar from '/Navbar';
-import styles from './Header.module.css';
-import BagIcon from '../assets/BagIcon.jsx'
-import { Link } from 'react-router-dom';
-import { useAuthContext } from '../context/AuthContext';
-import { CarritoContext } from '../context/CarritoContext';
+import Navbar from "./NavBar.jsx"
+import styles from  "./Header.module.css";
+import BagIcon from "../assets/BagIcon.jsx";
+import { Link } from "react-router-dom";
+import { useAuthContext } from "../context/AuthContext";
+import { CarritoContext } from "../context/CarritoContext";
 
 const  Header = () => {
   const { carrito } = useContext(CarritoContext);
