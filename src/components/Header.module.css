@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner:wght@400..700&family=Pirata+One&display=swap');
+
+
+.header {
+  display: grid;
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 2px 40px;
+  border-bottom: 3px solid rgb(0, 121, 0);
+  flex-wrap: wrap;
+  grid-template-columns: 1fr 4fr 1fr;
+  background-color: rgb(70, 197, 70);
+  position: fixed;
+  top: 0px;
+}
+

@@ -1,0 +1,167 @@
+.nosotros-container {
+  font-family: 'Georgia', serif; /* O la fuente que uses en tu web */
+  color: #333;
+  line-height: 1.6;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.nosotros-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.nosotros-header h1 {
+  font-size: 3em;
+  color: #5d4037; /* Un tono marrón oscuro o similar a la cera */
+  margin-bottom: 10px;
+}
+
+.nosotros-header p {
+  font-size: 1.2em;
+  color: #666;
+}
+
+.nosotros-introduccion {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.introduccion-content {
+  flex: 2;
+  padding-right: 30px;
+}
+
+.introduccion-content p {
+  margin-bottom: 15px;
+}
+
+.introduccion-image {
+  flex: 1;
+  min-width: 300px; /* Para que la imagen no sea demasiado pequeña en pantallas grandes */
+  text-align: center;
+}
+
+.introduccion-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.nosotros-vision-mision {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.vision-content, .mision-content {
+  flex: 1;
+  min-width: 300px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-left: 5px solid #a1887f; /* Un tono más claro del marrón */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.vision-content h2, .mision-content h2 {
+  color: #5d4037;
+  margin-bottom: 15px;
+}
+
+.mision-content ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.mision-content li {
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.mision-content li::before {
+  content: '✓'; /* O un icono de checkmark */
+  color: #a1887f;
+  position: absolute;
+  left: 0;
+}
+
+.nosotros-galeria {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.nosotros-galeria h2 {
+  font-size: 2.5em;
+  color: #5d4037;
+  margin-bottom: 30px;
+}
+
+.galeria-imagenes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+.vela-item {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.vela-item:hover {
+  transform: translateY(-5px);
+}
+
+.vela-item img {
+  width: 100%;
+  height: 250px; /* Altura fija para las imágenes de las velas */
+  object-fit: cover; /* Para que las imágenes se ajusten bien */
+  border-bottom: 1px solid #eee;
+}
+
+.vela-item p {
+  padding: 15px;
+  font-weight: bold;
+  color: #5d4037;
+}
+
+.nosotros-footer {
+  text-align: center;
+  padding: 30px 0;
+  border-top: 1px solid #eee;
+  color: #666;
+  font-style: italic;
+}
+
+/* Media queries para responsividad */
+@media (max-width: 768px) {
+  .nosotros-introduccion, .nosotros-vision-mision {
+    flex-direction: column;
+  }
+
+  .introduccion-content, .introduccion-image, .vision-content, .mision-content {
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .nosotros-header h1 {
+    font-size: 2.5em;
+  }
+}
+
+@media (max-width: 480px) {
+  .nosotros-header h1 {
+    font-size: 2em;
+  }
+}
