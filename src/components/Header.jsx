@@ -6,8 +6,9 @@ import X from '../assets/X';
 import { Link } from 'react-router-dom';
 import { useAuthContext } from '../context/AuthContext.jsx';
 import { CarritoContext } from '../context/CarritoContext.jsx';
-import MrPizza from "./../assets/logo.png";
- 
+import VelaLogo from "./../assets/logo.png";
+import BarraBusqueda from "../components/BarraBusqueda";
+
 const Header = () => {
   const { carrito } = useContext(CarritoContext);
   const {usuario, logout} = useAuthContext();
@@ -43,7 +44,7 @@ const Header = () => {
 
       {/* Seccion Izquierda: Logo */}
       <div className={styles.logo}>
-        <img src={MrPizza} alt="Mr. Pizza" height={80} width={80}/>
+        <img src={VelaLogo} alt="La Tiendita" height={80} width={80}/>
       </div>
 
       {/* Seccion Central: Componente NavBar - Desktop */}
@@ -53,6 +54,10 @@ const Header = () => {
 
       {/* Seccion Derecha: Iconos */}
       <div className="flex items-center gap-3 md:gap-4">
+          
+          {/* Barra de Busqueda */}
+          <BarraBusqueda />
+          
           {estaLogeado ? (
             <>
               {/* Si es admin, hacer el nombre clickeable, si no, solo texto */}
@@ -113,7 +118,7 @@ const Header = () => {
         <div className="px-8 py-16 flex flex-col gap-12 min-h-screen">
           {/* Logo en el menu en celular */}
           <div className="text-5xl font-['Pirata_One'] text-white text-center mb-4">
-            <img src={MrPizza} alt="Mr. Pizza" height={80} width={80}/>
+            <img src={VelaLogo} alt="La Tiendita" height={80} width={80}/>
           </div>
 
           {/* Navbar en celular */}

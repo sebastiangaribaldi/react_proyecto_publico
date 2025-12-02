@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 import { useProductosContext } from "../context/ProductosContext";
 
@@ -8,7 +9,7 @@ const Productos = () => {
   const { productos, cargando, error } = useProductosContext();
 
   // Logica de Paginacion 
-  const productosPorPagina = 3; 
+  const productosPorPagina = 4; 
   const [paginaActual, setPaginaActual] = useState(1);
 
   if (cargando) return "Cargando productos...";

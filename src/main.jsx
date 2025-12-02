@@ -6,6 +6,7 @@ import { BrowserRouter } from 'react-router-dom'
 import { CarritoProvider } from './context/CarritoContext.jsx'
 import { AuthProvider } from "./context/AuthContext";
 import { ProductosProvider } from './context/ProductosContext'; 
+import { SearchProvider } from "./context/BusquedaContext"; 
 
 
 createRoot(document.getElementById("root")).render(
@@ -13,9 +14,11 @@ createRoot(document.getElementById("root")).render(
     <BrowserRouter>
       <AuthProvider>
         <ProductosProvider>
-          <CarritoProvider>
-            <App />
-          </CarritoProvider>
+          <SearchProvider>
+            <CarritoProvider>
+              <App />
+            </CarritoProvider>
+          </SearchProvider>
         </ProductosProvider>
       </AuthProvider>
     </BrowserRouter>
