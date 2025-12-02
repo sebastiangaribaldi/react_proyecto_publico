@@ -84,7 +84,7 @@ const GestionProductos = () => {
                 <div className="grow flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 w-full">
                   <div className=" flex grow flex-col">
                     <h3 className="text-lg font-semibold text-gray-900 mb-1">
-                      {producto.nombre}  ({producto.tipo})
+                      {producto.nombre}  
                     </h3>
                     <h3 className="text-lg font-normal text-gray-900 mb-1">
                       {producto.descripcion}
